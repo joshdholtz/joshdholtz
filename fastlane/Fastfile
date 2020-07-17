@@ -1,7 +1,7 @@
 fastlane_require 'octokit'
 
 lane :update do
-  all_sponsors = fetch_sponsors(page_size: 3).sort_by(&:createdAt)
+  all_sponsors = fetch_sponsors(page_size: 100).sort_by(&:createdAt)
 
   public_sponsors = all_sponsors.select do |sponsor|
     sponsor[:privacyLevel] == "PUBLIC"
