@@ -13,11 +13,27 @@ jobs:
       - uses: actions/checkout@master
       - name: Install Ruby Dependencies
         run: |
-          sudo gem install bundler
+          sudo gem install
           bundle install
+
+      - name: Match Repo Clone Test (please delete this)
+        env:
+          GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
+          MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY }}
+        run: |
+          eval "$(ssh-agent -s)"
+          ssh-add - <<< "${MATCH_DEPLOY_KEY}"
+          git clone git@github.com:joshdholtz/joshdholtz.git
+          ls joshdholtz
 
 
       - name: fastlane
+        env:
+          MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY  }}
+          GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
+          MATCH_READONLY: true
         run: |
+          eval "$(ssh-agent -s)"
+          ssh-add - <<< "${MATCH_DEPLOY_KEY}"
           bundle exec fastlane update
 
