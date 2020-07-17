@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Install Ruby Dependencies
         run: |
-          gem install bundler
+          sudo gem install bundler
           bundle install
 
 
