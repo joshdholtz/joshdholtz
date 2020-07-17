@@ -16,7 +16,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         <tr><th>13 months</th></tr>
         <tr><td>
             <a href='https://github.com/dummyco'>
-            <img width=140 height=140 src='https://github.com/dummyco.png?size=140'>
+            <img width=140 src='https://github.com/dummyco.png?size=140'>
           </a>
         </td></tr>
       </table>
@@ -27,7 +27,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/AmauriC'>
-            <img width=140 height=140 src='https://github.com/AmauriC.png?size=140'>
+            <img width=140 src='https://github.com/AmauriC.png?size=140'>
           </a>
         </td></tr>
       </table>
@@ -38,7 +38,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/Phillip-Cognativ'>
-            <img width=140 height=140 src='https://github.com/Phillip-Cognativ.png?size=140'>
+            <img width=140 src='https://github.com/Phillip-Cognativ.png?size=140'>
           </a>
         </td></tr>
       </table>
@@ -49,7 +49,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/simonnickel'>
-            <img width=140 height=140 src='https://github.com/simonnickel.png?size=140'>
+            <img width=140 src='https://github.com/simonnickel.png?size=140'>
           </a>
         </td></tr>
       </table>
@@ -62,7 +62,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/dlackty'>
-            <img width=140 height=140 src='https://github.com/dlackty.png?size=140'>
+            <img width=140 src='https://github.com/dlackty.png?size=140'>
           </a>
         </td></tr>
       </table>
@@ -73,7 +73,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/tiagomartinho'>
-            <img width=140 height=140 src='https://github.com/tiagomartinho.png?size=140'>
+            <img width=140 src='https://github.com/tiagomartinho.png?size=140'>
           </a>
         </td></tr>
       </table>
@@ -84,7 +84,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/appcircle-io'>
-            <img width=140 height=140 src='https://github.com/appcircle-io.png?size=140'>
+            <img width=140 src='https://github.com/appcircle-io.png?size=140'>
           </a>
         </td></tr>
       </table>
