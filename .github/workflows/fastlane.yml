@@ -12,7 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Install Ruby Dependencies
-        run: bundle install
+        run: |
+          gem install bundler
+          bundle install
 
 
       - name: fastlane
