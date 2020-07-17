@@ -1,0 +1,75 @@
+fastlane_require 'octokit'
+
+lane :update do
+  all_sponsors = fetch_sponsors(page_size: 3).sort_by(&:createdAt)
+
+  public_sponsors = all_sponsors.select do |sponsor|
+    sponsor[:privacyLevel] == "PUBLIC"
+  end
+  private_sponsors = all_sponsors.select do |sponsor|
+    sponsor[:privacyLevel] != "PUBLIC"
+  end
+
+  erb(
+    template: "fastlane/README.md.erb",
+    destination: "README.md",
+    placeholders: {
+      :sponsors_top_8 => public_sponsors[0...8],
+      :sponsors_the_rest => public_sponsors[8..-1],
+    }
+  )
+end
+
+private_lane :fetch_sponsors do |options|
+  sponsors = []
+
+  client = Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])
+
+  login = options[:login] || ENV['GITHUB_LOGIN']
+  page_size = options[:page_size] || 100
+
+  end_cursor = ""
+  loop do
+    query = <<-GRAPHQL
+{
+  user(login: "#{login}") {
+    sponsorshipsAsMaintainer(first: #{page_size}, after: "#{end_cursor}") {
+      totalCount
+      pageInfo {
+        endCursor
+        hasNextPage
+        startCursor
+      }
+      edges {
+        node {
+          id
+          privacyLevel
+          createdAt
+          sponsor {
+            email
+            login
+            name
+          }
+        }
+      }
+    }
+  }
+}
+    GRAPHQL
+
+    response = client.post '/graphql', { query: query }.to_json
+    
+    page = response[:data][:user][:sponsorshipsAsMaintainer]
+
+    has_next = page[:pageInfo][:hasNextPage]
+    end_cursor = page[:pageInfo][:endCursor]
+
+    sponsors += page[:edges].map do |edge|
+      edge[:node]
+    end
+
+    break unless has_next
+  end
+
+  sponsors 
+end

@@ -1,0 +1,24 @@
+I love open source software :heart:
+
+# My Top 8
+
+Thank you to my 8 longest sponsors :pray:
+
+<table border=0>
+  <% sponsors_top_8.each_slice(4).with_index do |sponsors, row| %>
+  <tr>
+    <% sponsors.each_with_index do |sponsor, col| %>
+    <td>
+      <table>
+        <tr><th><%= (row*4) + (col+1) %> - <%= sponsor[:sponsor][:name] %></th></tr>
+        <tr><td>
+            <a href='https://github.com/<%= sponsor[:sponsor][:login]%>'>
+            <img src='https://github.com/<%= sponsor[:sponsor][:login]%>.png?size=140'>
+          </a>
+        </td></tr>
+      </table>
+    </td>
+    <% end %>
+  </tr>
+  <% end %>
+</table>
