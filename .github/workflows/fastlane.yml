@@ -18,14 +18,14 @@ jobs:
 
       - name: fastlane
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN  }}
-          MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY  }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY }}
           GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
           MATCH_READONLY: true
         run: |
           eval "$(ssh-agent -s)"
           ssh-add - <<< "${MATCH_DEPLOY_KEY}"
-          git config --global user.email "me@joshholtz.com"
-          git config --global user.name "Josh HOltz"
+          git config --global user.email "${{ secrets.GIT_EMAIL }}"
+          git config --global user.name "${{ secrets.GIT_USER }}"
           bundle exec fastlane update
 
