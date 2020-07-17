@@ -17,8 +17,13 @@ lane :update do
       :sponsors_top_8 => public_sponsors[0...8] || [],
       :sponsors_the_rest => public_sponsors[8..-1] || [],
       :private_sponsor_count => private_sponsors.size
-    }
+    },
+    trim_mode: "-"
   )
+
+  git_add(path: "./README.md")
+  git_commit(path: "./README.md", message: "Updated with fastlane")
+  push_to_git_remote
 end
 
 private_lane :fetch_sponsors do |options|
