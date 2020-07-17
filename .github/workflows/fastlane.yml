@@ -15,9 +15,7 @@ jobs:
           ruby-version: '2.5'
       - uses: actions/checkout@master
       - name: Install Ruby Dependencies
-        run: |
-          sudo gem install bundler
-          bundle install
+        run: bundle install
 
       - name: fastlane
         env:
