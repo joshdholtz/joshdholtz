@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@master
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.5'
+          ruby-version: 2.6
           bundler-cache: true
 
       - name: fastlane
