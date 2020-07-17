@@ -1,9 +1,6 @@
 name: Execute fastlane
 
-on:
-  pull_request:
-    branches:
-      - master
+on: repository_dispatch
 
 jobs:
   build_dev:
