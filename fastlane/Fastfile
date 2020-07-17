@@ -14,8 +14,8 @@ lane :update do
     template: "fastlane/README.md.erb",
     destination: "README.md",
     placeholders: {
-      :sponsors_top_8 => public_sponsors[0...8],
-      :sponsors_the_rest => public_sponsors[0..-1],
+      :sponsors_top_8 => public_sponsors[0...8] || [],
+      :sponsors_the_rest => public_sponsors[8..-1] || [],
     }
   )
 end

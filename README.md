@@ -84,24 +84,4 @@ Thank you to my 8 longest sponsors :pray:
 </table>
 
 ## My Top 9+ Sponsors
-<a href='https://github.com/dummyco'>
-  <img width=80 height=80 src='https://github.com/dummyco.png?size=80'>
-</a>
-<a href='https://github.com/AmauriC'>
-  <img width=80 height=80 src='https://github.com/AmauriC.png?size=80'>
-</a>
-<a href='https://github.com/Phillip-Cognativ'>
-  <img width=80 height=80 src='https://github.com/Phillip-Cognativ.png?size=80'>
-</a>
-<a href='https://github.com/simonnickel'>
-  <img width=80 height=80 src='https://github.com/simonnickel.png?size=80'>
-</a>
-<a href='https://github.com/dlackty'>
-  <img width=80 height=80 src='https://github.com/dlackty.png?size=80'>
-</a>
-<a href='https://github.com/tiagomartinho'>
-  <img width=80 height=80 src='https://github.com/tiagomartinho.png?size=80'>
-</a>
-<a href='https://github.com/appcircle-io'>
-  <img width=80 height=80 src='https://github.com/appcircle-io.png?size=80'>
-</a>
+No other sponsors at the moment :smile:

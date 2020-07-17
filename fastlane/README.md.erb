@@ -26,8 +26,12 @@ Thank you to my 8 longest sponsors :pray:
 </table>
 
 ## My Top 9+ Sponsors
+<%- if sponsors_the_rest.empty? -%>
+No other sponsors at the moment :smile:
+<%- else -%>
 <%- sponsors_the_rest.each_with_index do |sponsor| -%>
 <a href='https://github.com/<%= sponsor[:sponsor][:login]%>'>
   <img width=80 height=80 src='https://github.com/<%= sponsor[:sponsor][:login]%>.png?size=80'>
 </a>
+<%- end -%>
 <%- end -%>
