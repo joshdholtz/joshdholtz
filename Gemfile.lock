@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/fastlane/fastlane.git
-  revision: 342b4dac43225f3488253086f648cdd2f51dba30
-  branch: joshdholtz-erb-action-use-erbhelper-and-trim-mode
+  revision: 6bf594cc4857072e88bdb6f6386ecab49ad9182b
+  branch: master
   specs:
     fastlane (2.152.0)
       CFPropertyList (>= 2.3, < 4.0.0)
