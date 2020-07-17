@@ -18,6 +18,7 @@ jobs:
 
       - name: Match Repo Clone Test (please delete this)
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
           MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY }}
         run: |
