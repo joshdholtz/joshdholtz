@@ -10,12 +10,11 @@ jobs:
     name: Execute fastlane
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: '2.5'
-      - uses: actions/checkout@master
-      - name: Install Ruby Dependencies
-        run: bundle install
+          bundler-cache: true
 
       - name: fastlane
         env:
