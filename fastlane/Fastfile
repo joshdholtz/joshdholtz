@@ -65,7 +65,14 @@ private_lane :fetch_sponsors do |options|
     end_cursor = page[:pageInfo][:endCursor]
 
     sponsors += page[:edges].map do |edge|
-      edge[:node]
+      sponsor = edge[:node]
+
+      created_at = Date.parse(sponsor[:createdAt])
+      now = Date.today
+      months = (now.year*12 + now.month) - (created_at.year*12 + now.month) + 1
+      sponsor[:months] = months
+
+      sponsor
     end
 
     break unless has_next
