@@ -29,7 +29,7 @@ end
 private_lane :fetch_sponsors do |options|
   sponsors = []
 
-  client = Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])
+  client = Octokit::Client.new(access_token: ENV['GH_TOKEN'])
   page_size = options[:page_size] || 100
 
   end_cursor = ""
