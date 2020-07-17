@@ -40,6 +40,17 @@ GIT
       xcpretty (~> 0.3.0)
       xcpretty-travis-formatter (>= 0.0.3)
 
+GIT
+  remote: https://github.com/joshdholtz/fastlane-plugin-github_action.git
+  revision: 5cfdcb334fdf603409e94b09b6b10ab472f2ea35
+  branch: master
+  specs:
+    fastlane-plugin-github_action (1.1.0)
+      dotenv
+      fastlane (>= 2.148.1)
+      rbnacl
+      sshkey
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -86,11 +97,6 @@ GEM
     faraday_middleware (1.0.0)
       faraday (~> 1.0)
     fastimage (2.1.7)
-    fastlane-plugin-github_action (1.0.0)
-      dotenv
-      fastlane (>= 2.148.1)
-      rbnacl
-      sshkey
     ffi (1.13.1)
     gh_inspector (1.1.3)
     google-api-client (0.38.0)
@@ -194,7 +200,7 @@ PLATFORMS
 
 DEPENDENCIES
   fastlane!
-  fastlane-plugin-github_action
+  fastlane-plugin-github_action!
   octokit
 
 BUNDLED WITH
