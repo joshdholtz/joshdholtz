@@ -22,7 +22,7 @@ lane :update do
   )
 
   git_add(path: "./README.md")
-  git_commit(path: "./README.md", message: "Updated with fastlane")
+  git_commit(path: "./README.md", message: "Updated with fastlane", allow_nothing_to_commit: true)
   push_to_git_remote
 end
 
