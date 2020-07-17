@@ -28,6 +28,11 @@ Thank you to my 8 longest sponsoring sponsors :pray:
   <%- end -%>
 </table>
 
+<%- if private_sponsor_count > 0 -%>
+## My Private Sponsors
+Thank you to my <%= "#{private_sponsor_count} #{private_sponsor_count == 1 ? "private sponsor" : "private sponsors"}" %>
+<%- end -%>
+
 ## My Top 9+ Sponsors
 <%- if sponsors_the_rest.empty? -%>
 No other sponsors at the moment :smile:

@@ -16,6 +16,7 @@ lane :update do
     placeholders: {
       :sponsors_top_8 => public_sponsors[0...8] || [],
       :sponsors_the_rest => public_sponsors[8..-1] || [],
+      :private_sponsor_count => private_sponsors.size
     }
   )
 end
@@ -24,16 +25,15 @@ private_lane :fetch_sponsors do |options|
   sponsors = []
 
   client = Octokit::Client.new(access_token: ENV['GITHUB_TOKEN'])
-
-  login = options[:login] || ENV['GITHUB_LOGIN']
   page_size = options[:page_size] || 100
 
   end_cursor = ""
   loop do
     query = <<-GRAPHQL
 {
-  user(login: "#{login}") {
-    sponsorshipsAsMaintainer(first: #{page_size}, after: "#{end_cursor}") {
+  viewer {
+    login
+    sponsorshipsAsMaintainer(includePrivate: true, first: #{page_size}, after: "#{end_cursor}") {
       totalCount
       pageInfo {
         endCursor
@@ -59,7 +59,7 @@ private_lane :fetch_sponsors do |options|
 
     response = client.post '/graphql', { query: query }.to_json
     
-    page = response[:data][:user][:sponsorshipsAsMaintainer]
+    page = response[:data][:viewer][:sponsorshipsAsMaintainer]
 
     has_next = page[:pageInfo][:hasNextPage]
     end_cursor = page[:pageInfo][:endCursor]
