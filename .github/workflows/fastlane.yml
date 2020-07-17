@@ -25,5 +25,7 @@ jobs:
         run: |
           eval "$(ssh-agent -s)"
           ssh-add - <<< "${MATCH_DEPLOY_KEY}"
+          git config --global user.email "me@joshholtz.com"
+          git config --global user.name "Josh HOltz"
           bundle exec fastlane update
 
