@@ -1,4 +1,4 @@
-I love open source software :heart:
+I love open source software
 
 <hr/>
 
