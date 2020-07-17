@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Install Ruby Dependencies
         run: |
-          sudo gem install
+          sudo gem install bundler
           bundle install
 
       - name: Match Repo Clone Test (please delete this)
