@@ -18,7 +18,7 @@ jobs:
 
       - name: fastlane
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN  }}:  
+          GH_TOKEN: ${{ secrets.GH_TOKEN  }}
           MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY  }}
           GIT_SSH_COMMAND: "ssh -o StrictHostKeyChecking=no"
           MATCH_READONLY: true
