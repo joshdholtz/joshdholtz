@@ -95,5 +95,5 @@ Thank you to my 8 longest sponsoring sponsors :pray:
 ## My Private Sponsors
 Thank you to my 2 private sponsors
 
-## My Top 9+ Sponsors
+## My Top 9+ (Sponsors)
 No other sponsors at the moment :smile:
