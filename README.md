@@ -89,6 +89,17 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         </td></tr>
       </table>
     </td>
+    <td>
+      <table>
+        <tr><th>8 - Vadim Shpakovski</th></tr>
+        <tr><th>1 month</th></tr>
+        <tr><td>
+            <a href='https://github.com/shpakovski'>
+            <img src='https://github.com/shpakovski.png'>
+          </a>
+        </td></tr>
+      </table>
+    </td>
   </tr>
 </table>
 
