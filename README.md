@@ -34,18 +34,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
     </td>
     <td>
       <table>
-        <tr><th>3 - Phillip-Cognativ</th></tr>
-        <tr><th>1 month</th></tr>
-        <tr><td>
-            <a href='https://github.com/Phillip-Cognativ'>
-            <img src='https://github.com/Phillip-Cognativ.png'>
-          </a>
-        </td></tr>
-      </table>
-    </td>
-    <td>
-      <table>
-        <tr><th>4 - Simon Nickel</th></tr>
+        <tr><th>3 - Simon Nickel</th></tr>
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/simonnickel'>
@@ -54,11 +43,9 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         </td></tr>
       </table>
     </td>
-  </tr>
-  <tr>
     <td>
       <table>
-        <tr><th>5 - Richard Lee</th></tr>
+        <tr><th>4 - Richard Lee</th></tr>
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/dlackty'>
@@ -67,9 +54,11 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         </td></tr>
       </table>
     </td>
+  </tr>
+  <tr>
     <td>
       <table>
-        <tr><th>6 - Tiago Martinho</th></tr>
+        <tr><th>5 - Tiago Martinho</th></tr>
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/tiagomartinho'>
@@ -80,7 +69,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
     </td>
     <td>
       <table>
-        <tr><th>7 - Appcircle Team</th></tr>
+        <tr><th>6 - Appcircle Team</th></tr>
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/appcircle-io'>
@@ -91,7 +80,7 @@ Thank you to my 8 longest sponsoring sponsors :pray:
     </td>
     <td>
       <table>
-        <tr><th>8 - Vadim Shpakovski</th></tr>
+        <tr><th>7 - Vadim Shpakovski</th></tr>
         <tr><th>1 month</th></tr>
         <tr><td>
             <a href='https://github.com/shpakovski'>
