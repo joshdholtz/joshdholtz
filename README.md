@@ -89,11 +89,24 @@ Thank you to my 8 longest sponsoring sponsors :pray:
         </td></tr>
       </table>
     </td>
+    <td>
+      <table>
+        <tr><th>8 - Ryan Zulkoski</th></tr>
+        <tr><th>1 month</th></tr>
+        <tr><td>
+            <a href='https://github.com/rzulkoski'>
+            <img src='https://github.com/rzulkoski.png'>
+          </a>
+        </td></tr>
+      </table>
+    </td>
   </tr>
 </table>
 
 ## My Top 9+ (Sponsors)
-No other sponsors at the moment :smile:
+<a href='https://github.com/mormahr'>
+  <img width=80 height=80 src='https://github.com/mormahr.png?size=80'>
+</a>
 
 ## My Private Sponsors
 Thank you to my 1 private sponsor
